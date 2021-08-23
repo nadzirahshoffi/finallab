@@ -1,0 +1,302 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .container{
+      width: 80%;
+      margin-left: auto;
+      margin-right:auto;
+    } 
+  
+    .flex{
+      display: flex;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+      justify-content: space-between;
+    }
+    
+    .topnav a {
+      float: right;
+      display: block;
+      color: #646464;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: rgb(7, 7, 7);
+      color: rgb(255, 255, 255);
+    }
+    
+    .topnav a.active {
+      background-color: rgb(255, 255, 255);
+      color: #646464;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 800px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  /*   
+    .header{
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header-left{
+      display: flex;
+      align-items: center;
+    }
+    .header-left a{
+      text-decoration: none;
+      color: gray;
+      padding-left: 10px;
+    }
+    
+    .header-right a{
+      text-decoration: none;
+      color: gray;
+      padding-left: 10px;
+    } */
+    /* .header-right{
+      display: flex;
+      flex-direction: row;
+    } */
+    
+    .header-image{
+      height: 50px;
+      width: 100px;
+  
+  }
+    
+    .header-right-mobile{
+        display: none;
+    }
+   .header a:hover{
+     color:lightpink;
+   }
+  
+  
+    @media (max-width: 800px){
+       .header-right-mobile{ 
+        display: block;
+       }
+       .header-link{
+         display: none;
+       }
+      
+      }
+    
+  
+  .banner_container{
+      background-image: url("https://media.istockphoto.com/photos/unicorn-cake-on-a-cakestand-picture-id868596228?k=6&m=868596228&s=612x612&w=0&h=ETCirhlVIVtoErH7XRqRXF4ss3ekvNaPtaOcaslDw48=");
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+  
+  
+  @media (max-width: 500px){
+    .banner_container{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+    z-index: -2;
+  
+    }
+    .banner_container:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+      content: "";
+      z-index: -1;
+    
+    }
+    .banner_items{
+      width: 200px;
+      color: white;
+  
+    }
+  
+    .banner_items h1{
+      font-size: 30px;
+      text-align: center;
+  
+    }
+    .banner_items p{
+      font-size: 20px;
+    }
+  
+  }
+  .banner_items h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+  }
+  
+  .banner_items{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    font-size: 30px;
+  } 
+  
+  .product_items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+  }
+  
+  
+  #img_product{
+    height: 200px;
+    width: 200px;
+  }
+   .product_items h4{
+    margin-top: 0px;
+  }
+  
+  .about img {
+    width: 350px;
+    height: 400px;
+    margin-right: 30px;
+  }
+  
+  .about{
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .about_text2{
+    margin-right: 30px;
+  }
+  .about_text2 h3{
+    margin-bottom: 20px;
+  }
+  
+  .about_text2 p{
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 800px){
+    .about{
+      flex-direction: column;
+    }
+    .about_text2{
+      margin-top: 30px;
+      
+    }
+  
+  }
+  @media (max-width: 600px){
+  .img_about{
+     margin-right: 0;
+     display: none;
+   }
+  }
+  
+  /* contact page */
+  
+  
+  .contact{
+    justify-content: space-between;
+  }
+  
+   .contact_label{
+    margin: 30px 0px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .contact-info h3{
+    text-decoration: underline;
+  }
+ 
+  
+  @media (max-width:800px){
+    .contact{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .contact-info{
+     margin-bottom: 30px; 
+    }
+  }
+  
+  #submit{
+    background-color: lightpink;
+  } 
+  
+  
+  
+  /* product page */
+   .product_container{
+     margin-top: 30px;
+   }
+  .product_items h4{
+   
+    margin-bottom: 0px;
+  }
+  .product_btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .product_btn a{
+    width: 300px;
+    height: 30px;
+    background-color: lightpink;
+    text-align: center;
+    color: gray;
+  }
+  @media (max-width: 800px){
+    .product_items{
+      display: grid;
+      grid-template-columns:repeat(2,1fr);
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .product_items{
+      display: grid;
+      grid-template-columns:1fr;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
