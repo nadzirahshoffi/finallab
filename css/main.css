@@ -222,7 +222,7 @@ body{
   
   }
   @media (max-width: 600px){
-  .img_about{
+  #img_bakery{
      margin-right: 0;
      display: none;
    }
